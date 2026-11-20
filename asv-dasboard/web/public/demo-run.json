@@ -1,0 +1,807 @@
+{
+  "run": {
+    "id": "demo-run-nala16-cadangan",
+    "name": "Simulasi Misi KKI 2026 — Data Cadangan",
+    "status": "finished",
+    "started_at": "2026-11-20T10:00:00Z",
+    "ended_at": "2026-11-20T10:01:42.000Z",
+    "summary": {
+      "total_time_s": 102,
+      "collisions": 0,
+      "score": 100,
+      "items_delivered": 3,
+      "direction": "Spot 1 → Spot 2"
+    }
+  },
+  "events": [
+    {
+      "t": 0,
+      "type": "start",
+      "data": {
+        "description": "Misi dimulai dari dermaga Spot 1"
+      }
+    },
+    {
+      "t": 16.5,
+      "type": "pick",
+      "data": {
+        "item": "cube",
+        "carried": 1
+      }
+    },
+    {
+      "t": 22,
+      "type": "pick",
+      "data": {
+        "item": "sphere",
+        "carried": 2
+      }
+    },
+    {
+      "t": 28.5,
+      "type": "pick",
+      "data": {
+        "item": "prism",
+        "carried": 3
+      }
+    },
+    {
+      "t": 35,
+      "type": "ftp_start",
+      "data": {
+        "direction": "Spot1_ke_Spot2",
+        "attempt": 1
+      }
+    },
+    {
+      "t": 41.2,
+      "type": "gate_pass",
+      "data": {
+        "gate": 1,
+        "description": "Melintasi Gate 1 (lebar 2.0m)"
+      }
+    },
+    {
+      "t": 49.5,
+      "type": "gate_pass",
+      "data": {
+        "gate": 2,
+        "description": "Melintasi Gate 2 (lebar 1.5m)"
+      }
+    },
+    {
+      "t": 58.8,
+      "type": "gate_pass",
+      "data": {
+        "gate": 3,
+        "description": "Melintasi Gate 3 (lebar 2.0m)"
+      }
+    },
+    {
+      "t": 65,
+      "type": "docking",
+      "data": {
+        "dock": "Spot 2",
+        "status": "berhasil"
+      }
+    },
+    {
+      "t": 76,
+      "type": "place",
+      "data": {
+        "item": "cube",
+        "carried": 2
+      }
+    },
+    {
+      "t": 81.5,
+      "type": "place",
+      "data": {
+        "item": "sphere",
+        "carried": 1
+      }
+    },
+    {
+      "t": 87,
+      "type": "place",
+      "data": {
+        "item": "prism",
+        "carried": 0
+      }
+    },
+    {
+      "t": 92,
+      "type": "buzzer_spray",
+      "data": {
+        "buzzer": true,
+        "spray": true
+      }
+    },
+    {
+      "t": 101.5,
+      "type": "mission_done",
+      "data": {
+        "status": "sukses",
+        "score": 100
+      }
+    }
+  ],
+  "samples": [
+    {
+      "t": 0,
+      "mission_state": "IDLE",
+      "battery_pct": 96,
+      "battery_v": 24.8,
+      "x": 2.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 2,
+      "mission_state": "IDLE",
+      "battery_pct": 95.8,
+      "battery_v": 24.8,
+      "x": 2.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 4,
+      "mission_state": "IDLE",
+      "battery_pct": 95.6,
+      "battery_v": 24.7,
+      "x": 2.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 6,
+      "mission_state": "START",
+      "battery_pct": 95.4,
+      "battery_v": 24.7,
+      "x": 2.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 8,
+      "mission_state": "START",
+      "battery_pct": 95.2,
+      "battery_v": 24.6,
+      "x": 2.4,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 100,
+      "thrust_right": 100,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 10,
+      "mission_state": "START",
+      "battery_pct": 95,
+      "battery_v": 24.6,
+      "x": 2.6,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 200,
+      "thrust_right": 200,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 12,
+      "mission_state": "START",
+      "battery_pct": 94.8,
+      "battery_v": 24.5,
+      "x": 2.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 153,
+      "thrust_right": 153,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 14,
+      "mission_state": "START",
+      "battery_pct": 94.6,
+      "battery_v": 24.5,
+      "x": 3,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 107,
+      "thrust_right": 107,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 16,
+      "mission_state": "PICK_UP",
+      "battery_pct": 94.4,
+      "battery_v": 24.4,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "GRABBING"
+    },
+    {
+      "t": 18,
+      "mission_state": "PICK_UP",
+      "battery_pct": 94.2,
+      "battery_v": 24.4,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 20,
+      "mission_state": "PICK_UP",
+      "battery_pct": 94,
+      "battery_v": 24.3,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "GRABBING"
+    },
+    {
+      "t": 22,
+      "mission_state": "PICK_UP",
+      "battery_pct": 93.8,
+      "battery_v": 24.3,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 24,
+      "mission_state": "PICK_UP",
+      "battery_pct": 93.6,
+      "battery_v": 24.3,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "GRABBING"
+    },
+    {
+      "t": 26,
+      "mission_state": "PICK_UP",
+      "battery_pct": 93.4,
+      "battery_v": 24.2,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 28,
+      "mission_state": "PICK_UP",
+      "battery_pct": 93.2,
+      "battery_v": 24.2,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 30,
+      "mission_state": "PICK_UP",
+      "battery_pct": 93,
+      "battery_v": 24.1,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 32,
+      "mission_state": "PICK_UP",
+      "battery_pct": 92.8,
+      "battery_v": 24.1,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 34,
+      "mission_state": "PICK_UP",
+      "battery_pct": 92.6,
+      "battery_v": 24,
+      "x": 3.2,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 36,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 92.4,
+      "battery_v": 24,
+      "x": 3.5,
+      "y": 6,
+      "yaw": 12,
+      "thrust_left": 420,
+      "thrust_right": 420,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 38,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 92.2,
+      "battery_v": 23.9,
+      "x": 4.75,
+      "y": 6.43,
+      "yaw": 10,
+      "thrust_left": 383,
+      "thrust_right": 457,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 40,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 92,
+      "battery_v": 23.9,
+      "x": 6,
+      "y": 6.72,
+      "yaw": 5,
+      "thrust_left": 362,
+      "thrust_right": 478,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 42,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 91.8,
+      "battery_v": 23.9,
+      "x": 7.25,
+      "y": 6.79,
+      "yaw": -1,
+      "thrust_left": 366,
+      "thrust_right": 474,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 44,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 91.6,
+      "battery_v": 23.8,
+      "x": 8.5,
+      "y": 6.63,
+      "yaw": -7,
+      "thrust_left": 394,
+      "thrust_right": 446,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 46,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 91.4,
+      "battery_v": 23.8,
+      "x": 9.75,
+      "y": 6.26,
+      "yaw": -11,
+      "thrust_left": 433,
+      "thrust_right": 407,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 48,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 91.2,
+      "battery_v": 23.7,
+      "x": 11,
+      "y": 5.82,
+      "yaw": -12,
+      "thrust_left": 467,
+      "thrust_right": 373,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 50,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 91,
+      "battery_v": 23.7,
+      "x": 12.25,
+      "y": 5.43,
+      "yaw": -8,
+      "thrust_left": 480,
+      "thrust_right": 360,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 52,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 90.8,
+      "battery_v": 23.6,
+      "x": 13.5,
+      "y": 5.22,
+      "yaw": -3,
+      "thrust_left": 467,
+      "thrust_right": 373,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 54,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 90.6,
+      "battery_v": 23.6,
+      "x": 14.75,
+      "y": 5.24,
+      "yaw": 4,
+      "thrust_left": 433,
+      "thrust_right": 407,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 56,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 90.4,
+      "battery_v": 23.5,
+      "x": 16,
+      "y": 5.5,
+      "yaw": 9,
+      "thrust_left": 394,
+      "thrust_right": 446,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 58,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 90.2,
+      "battery_v": 23.5,
+      "x": 17.25,
+      "y": 5.91,
+      "yaw": 12,
+      "thrust_left": 366,
+      "thrust_right": 474,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 60,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 90,
+      "battery_v": 23.4,
+      "x": 18.5,
+      "y": 6.35,
+      "yaw": 11,
+      "thrust_left": 362,
+      "thrust_right": 478,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 62,
+      "mission_state": "FOLLOW_PATH",
+      "battery_pct": 89.8,
+      "battery_v": 23.4,
+      "x": 19.75,
+      "y": 6.68,
+      "yaw": 6,
+      "thrust_left": 383,
+      "thrust_right": 457,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 64,
+      "mission_state": "DOCKING",
+      "battery_pct": 89.6,
+      "battery_v": 23.4,
+      "x": 21,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 150,
+      "thrust_right": 150,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 66,
+      "mission_state": "DOCKING",
+      "battery_pct": 89.4,
+      "battery_v": 23.3,
+      "x": 21.16,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 120,
+      "thrust_right": 120,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 68,
+      "mission_state": "DOCKING",
+      "battery_pct": 89.2,
+      "battery_v": 23.3,
+      "x": 21.32,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 90,
+      "thrust_right": 90,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 70,
+      "mission_state": "DOCKING",
+      "battery_pct": 89,
+      "battery_v": 23.2,
+      "x": 21.48,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 60,
+      "thrust_right": 60,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 72,
+      "mission_state": "DOCKING",
+      "battery_pct": 88.8,
+      "battery_v": 23.2,
+      "x": 21.64,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 30,
+      "thrust_right": 30,
+      "kill_switch": false,
+      "gripper": "CARRYING"
+    },
+    {
+      "t": 74,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 88.6,
+      "battery_v": 23.1,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "PLACING"
+    },
+    {
+      "t": 76,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 88.4,
+      "battery_v": 23.1,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 78,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 88.2,
+      "battery_v": 23,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "PLACING"
+    },
+    {
+      "t": 80,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 88,
+      "battery_v": 23,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "PLACING"
+    },
+    {
+      "t": 82,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 87.8,
+      "battery_v": 23,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 84,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 87.6,
+      "battery_v": 22.9,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "PLACING"
+    },
+    {
+      "t": 86,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 87.4,
+      "battery_v": 22.9,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 88,
+      "mission_state": "PLACE_ITEM",
+      "battery_pct": 87.2,
+      "battery_v": 22.8,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 90,
+      "mission_state": "BUZZER_SPRAY",
+      "battery_pct": 87,
+      "battery_v": 22.8,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 92,
+      "mission_state": "BUZZER_SPRAY",
+      "battery_pct": 86.8,
+      "battery_v": 22.7,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 94,
+      "mission_state": "BUZZER_SPRAY",
+      "battery_pct": 86.6,
+      "battery_v": 22.7,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 96,
+      "mission_state": "BUZZER_SPRAY",
+      "battery_pct": 86.4,
+      "battery_v": 22.6,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 98,
+      "mission_state": "BUZZER_SPRAY",
+      "battery_pct": 86.2,
+      "battery_v": 22.6,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 100,
+      "mission_state": "DONE",
+      "battery_pct": 86,
+      "battery_v": 22.5,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    },
+    {
+      "t": 102,
+      "mission_state": "DONE",
+      "battery_pct": 85.8,
+      "battery_v": 22.5,
+      "x": 21.8,
+      "y": 6,
+      "yaw": 0,
+      "thrust_left": 0,
+      "thrust_right": 0,
+      "kill_switch": false,
+      "gripper": "READY"
+    }
+  ]
+}

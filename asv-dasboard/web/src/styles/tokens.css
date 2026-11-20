@@ -1,0 +1,79 @@
+/**
+ * tokens.css
+ * Variabel CSS tema terang dan gelap persis dari docs/wireframe/dashboard.html
+ */
+
+:root {
+  --page: #F3F5F7;
+  --text: #0F1B2D;
+  --header: linear-gradient(90deg, #0B1442, #1B31AB);
+  --footer: linear-gradient(90deg, #0B1442, #1B31AB);
+  --blue: linear-gradient(135deg, #3B7BFF, #1647D4);
+  --green: linear-gradient(135deg, #14A24E, #22C55E);
+  --teal: linear-gradient(135deg, #0E8DB3, #06B6D4);
+  --red: linear-gradient(135deg, #B3261E, #E5484D);
+  --gray: linear-gradient(135deg, #6B7A96, #94A3B8);
+  --progress: linear-gradient(90deg, #EDF4FF, #DFF5E9);
+  --progress-text: #0F1B2D;
+  --progress-sub: #6B7A96;
+  --step-off: #D8E8FF;
+  --step-off-text: #6B7A96;
+  --line-off: #D8E8FF;
+  --map-bg: #DCE7F6;
+  --ok: #22C55E;
+  --ok-dark: #14613A;
+  --warn: #FFB300;
+  --warn-dark: #8A5A00;
+  --bad: #D93025;
+  --bad-dark: #7A1712;
+
+  /* Kontras permukaan kartu & tabel */
+  --card-surface: #FFFFFF;
+  --card-border: rgba(15, 27, 45, 0.12);
+  --card-gray-bg: #FFFFFF;
+  --table-border: rgba(15, 27, 45, 0.12);
+  --subtext: #5A6B82;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+[data-theme="dark"] {
+  --page: linear-gradient(180deg, #091A33, #07201F);
+  --text: #EAF2FF;
+  --progress: linear-gradient(90deg, #102C54, #0E3A3A);
+  --progress-text: #EAF2FF;
+  --progress-sub: #A9BCDC;
+  --step-off: #1B335A;
+  --step-off-text: #8196BB;
+  --line-off: #1B335A;
+  --map-bg: #0F2038;
+
+  /* Kontras tema gelap */
+  --card-surface: #0E1E38;
+  --card-border: rgba(234, 242, 255, 0.18);
+  --card-gray-bg: rgba(14, 30, 56, 0.9);
+  --table-border: rgba(234, 242, 255, 0.14);
+  --subtext: #A9BCDC;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --page: linear-gradient(180deg, #091A33, #07201F);
+    --text: #EAF2FF;
+    --progress: linear-gradient(90deg, #102C54, #0E3A3A);
+    --progress-text: #EAF2FF;
+    --progress-sub: #A9BCDC;
+    --step-off: #1B335A;
+    --step-off-text: #8196BB;
+    --line-off: #1B335A;
+    --map-bg: #0F2038;
+
+    /* Kontras tema gelap */
+    --card-surface: #0E1E38;
+    --card-border: rgba(234, 242, 255, 0.18);
+    --card-gray-bg: rgba(14, 30, 56, 0.9);
+    --table-border: rgba(234, 242, 255, 0.14);
+    --subtext: #A9BCDC;
+  }
+}
